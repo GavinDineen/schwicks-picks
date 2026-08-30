@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS / misc
+Thumbs.db
+
+# Local notes
+/notes/
+scratch/

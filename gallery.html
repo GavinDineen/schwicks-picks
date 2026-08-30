@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Schwick's Picks</title>
+  <meta name="description" content="A gallery of past floral work from Schwick's Picks — faux arrangements, fresh flowers, wreaths, and custom pieces.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gallery — Schwick's Picks">
+  <meta property="og:description" content="Past floral work — faux arrangements, fresh flowers, wreaths, and custom pieces.">
+  <meta property="og:image" content="assets/img/branding/schwicks-picks-floral.png">
+  <meta property="og:site_name" content="Schwick's Picks">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/branding/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/branding/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Nunito:wght@400;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header (keep in sync across all pages) ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/img/branding/schwicks-picks-floral.png" alt="" width="34" height="44">
+        <span class="brand__name">Schwick&rsquo;s Picks</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="quote.html#contact">Contact</a></li>
+          <li><a class="btn" href="quote.html">Request a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Previous work</p>
+        <h1>Gallery</h1>
+        <p class="lead">Photos of past arrangements are on the way. In the meantime, here&rsquo;s the range of work &mdash; use the filter to browse by type.</p>
+
+        <!-- Vanilla-JS filter. Works without JS: all items simply show. -->
+        <div class="filter-bar" data-filter-bar role="group" aria-label="Filter gallery by type">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="faux" aria-pressed="false">Faux</button>
+          <button class="filter-btn" type="button" data-filter="real" aria-pressed="false">Real</button>
+          <button class="filter-btn" type="button" data-filter="other" aria-pressed="false">Other</button>
+        </div>
+
+        <div class="gallery-grid">
+
+          <!-- FAUX — Owner: replace each .photo-ph contents with
+               <img class="photo-ph__img" src="assets/img/gallery/faux-0X.jpg" alt="..."> -->
+          <figure class="gallery-figure" data-category="faux">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Faux Bouquet</span>
+            </div>
+            <figcaption>Faux &middot; drop in <code>faux-01.jpg</code></figcaption>
+          </figure>
+          <figure class="gallery-figure" data-category="faux">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Faux Centerpiece</span>
+            </div>
+            <figcaption>Faux &middot; drop in <code>faux-02.jpg</code></figcaption>
+          </figure>
+          <figure class="gallery-figure" data-category="faux">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Seasonal Faux Arrangement</span>
+            </div>
+            <figcaption>Faux &middot; drop in <code>faux-03.jpg</code></figcaption>
+          </figure>
+          <figure class="gallery-figure" data-category="faux">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Faux Wedding Florals</span>
+            </div>
+            <figcaption>Faux &middot; drop in <code>faux-04.jpg</code></figcaption>
+          </figure>
+
+          <!-- REAL — Owner: drop in assets/img/gallery/real-0X.jpg -->
+          <figure class="gallery-figure" data-category="real">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Fresh Bouquet</span>
+            </div>
+            <figcaption>Real &middot; drop in <code>real-01.jpg</code></figcaption>
+          </figure>
+          <figure class="gallery-figure" data-category="real">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Fresh Vase Arrangement</span>
+            </div>
+            <figcaption>Real &middot; drop in <code>real-02.jpg</code></figcaption>
+          </figure>
+          <figure class="gallery-figure" data-category="real">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Sympathy Arrangement</span>
+            </div>
+            <figcaption>Real &middot; drop in <code>real-03.jpg</code></figcaption>
+          </figure>
+
+          <!-- OTHER — Owner: drop in assets/img/gallery/other-0X.jpg -->
+          <figure class="gallery-figure" data-category="other">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Wreath</span>
+            </div>
+            <figcaption>Other &middot; drop in <code>other-01.jpg</code></figcaption>
+          </figure>
+          <figure class="gallery-figure" data-category="other">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Custom Piece</span>
+            </div>
+            <figcaption>Other &middot; drop in <code>other-02.jpg</code></figcaption>
+          </figure>
+          <figure class="gallery-figure" data-category="other">
+            <div class="photo-ph">
+              <img class="ph-glyph" src="assets/img/branding/sprig.svg" alt="" aria-hidden="true">
+              <span class="photo-ph__caption">Photo coming soon<br>Event D&eacute;cor</span>
+            </div>
+            <figcaption>Other &middot; drop in <code>other-03.jpg</code></figcaption>
+          </figure>
+
+        </div>
+
+        <p style="margin-top:2rem;"><a class="btn btn--lg" href="quote.html">Request a Quote</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Shared footer (keep in sync across all pages) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h2>Schwick&rsquo;s Picks</h2>
+          <p>Handcrafted faux &amp; fresh floral arrangements, wreaths, and custom pieces for weddings, events, and everyday joy.</p>
+          <!-- TODO: add service area, e.g. "Serving Eastern Iowa" -->
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="mailto:schwickp@gmail.com">schwickp@gmail.com</a></li>
+            <li><a href="tel:+13195307446">(319) 530-7446</a></li>
+            <li><a href="https://www.schwickspicks.com">www.schwickspicks.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <img class="footer-art" src="assets/img/branding/schwicks-picks-floral.png" alt="" aria-hidden="true">
+      <p class="footer-legal">&copy; <span id="year">2026</span> Schwick&rsquo;s Picks. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Schwick's Picks</title>
+  <meta name="description" content="The story behind Schwick's Picks — a small floral studio specializing in lasting faux flower arrangements, plus fresh florals and custom work.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Schwick's Picks">
+  <meta property="og:description" content="A small floral studio specializing in lasting faux flower arrangements.">
+  <meta property="og:image" content="assets/img/branding/schwicks-picks-floral.png">
+  <meta property="og:site_name" content="Schwick's Picks">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/branding/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/branding/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Nunito:wght@400;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header (keep in sync across all pages) ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/img/branding/schwicks-picks-floral.png" alt="" width="34" height="44">
+        <span class="brand__name">Schwick&rsquo;s Picks</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="quote.html#contact">Contact</a></li>
+          <li><a class="btn" href="quote.html">Request a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container hero__grid">
+        <img class="hero__art" src="assets/img/branding/schwicks-picks-floral.png"
+             alt="Watercolor bouquet of wildflowers in soft purple, pink, yellow, and blue">
+        <div class="hero__copy">
+          <p class="eyebrow">Our story</p>
+          <h1>About Schwick&rsquo;s Picks</h1>
+          <p class="lead">
+            Schwick&rsquo;s Picks is a small, family-run floral studio. What started as arranging flowers
+            for friends and family grew into a little business built around one idea: beautiful arrangements
+            shouldn&rsquo;t have to be fussy or fleeting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container narrow" style="margin-inline:auto;">
+        <h2>Why faux flowers</h2>
+        <p>
+          Our specialty is <strong>faux (artificial) arrangements</strong> made with premium materials &mdash;
+          real-touch petals, lifelike greenery, natural-looking stems. Done well, they&rsquo;re hard to tell
+          from fresh, and they keep their color and shape for years. No water, no wilting, no waste.
+        </p>
+        <p>
+          We still love fresh flowers, and we design with them for the occasions that call for it. And we
+          take on wreaths, custom commissions, and event d&eacute;cor &mdash; if you can picture it, we&rsquo;d
+          like to hear about it.
+        </p>
+        <p style="margin-top:1.5rem;"><a class="btn btn--lg" href="quote.html">Request a Quote</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Shared footer (keep in sync across all pages) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h2>Schwick&rsquo;s Picks</h2>
+          <p>Handcrafted faux &amp; fresh floral arrangements, wreaths, and custom pieces for weddings, events, and everyday joy.</p>
+          <!-- TODO: add service area, e.g. "Serving Eastern Iowa" -->
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="mailto:schwickp@gmail.com">schwickp@gmail.com</a></li>
+            <li><a href="tel:+13195307446">(319) 530-7446</a></li>
+            <li><a href="https://www.schwickspicks.com">www.schwickspicks.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <img class="footer-art" src="assets/img/branding/schwicks-picks-floral.png" alt="" aria-hidden="true">
+      <p class="footer-legal">&copy; <span id="year">2026</span> Schwick&rsquo;s Picks. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

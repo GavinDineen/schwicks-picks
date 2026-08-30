@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote — Schwick's Picks</title>
+  <meta name="description" content="Request a quote from Schwick's Picks for faux or fresh floral arrangements, wreaths, and custom pieces. Email or call (319) 530-7446.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Request a Quote — Schwick's Picks">
+  <meta property="og:description" content="Request a quote for faux or fresh floral arrangements, wreaths, and custom pieces.">
+  <meta property="og:image" content="assets/img/branding/schwicks-picks-floral.png">
+  <meta property="og:site_name" content="Schwick's Picks">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/branding/favicon.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/branding/favicon-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Nunito:wght@400;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header (keep in sync across all pages) ===== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/img/branding/schwicks-picks-floral.png" alt="" width="34" height="44">
+        <span class="brand__name">Schwick&rsquo;s Picks</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="quote.html#contact">Contact</a></li>
+          <li><a class="btn" href="quote.html" aria-current="page">Request a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="section">
+      <div class="container narrow" style="margin-inline:auto;">
+        <p class="eyebrow center">Let&rsquo;s talk flowers</p>
+        <h1 class="center">Request a Quote</h1>
+        <p class="lead center">
+          Tell us about your event or the space you&rsquo;re decorating and we&rsquo;ll get back to you with a quote.
+          The button below opens your email app with a message already started &mdash; just fill in the blanks.
+        </p>
+
+        <!-- NOTE: This is a mailto link, not a submitting form (the site has no backend).
+             It can be upgraded later to a hosted form service (e.g. Formspree) without
+             changing the page's look — swap this .quote-card's button for a <form>. -->
+        <div class="quote-card">
+          <h2>Start your quote request</h2>
+          <p>Opens a pre-filled email to <strong>schwickp@gmail.com</strong>.</p>
+          <a class="btn btn--lg"
+             href="mailto:schwickp@gmail.com?subject=Quote%20Request%20-%20Schwick%27s%20Picks&amp;body=Hi%20Schwick%27s%20Picks%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20a%20quote.%20Here%20are%20the%20details%3A%0D%0A%0D%0AName%3A%20%0D%0AEvent%20%2F%20Occasion%3A%20%0D%0ADate%20Needed%3A%20%0D%0AFlower%20Preference%20(Faux%20%2F%20Real%20%2F%20Mix)%3A%20%0D%0AStyle%20or%20Color%20Preferences%3A%20%0D%0ABudget%20Range%3A%20%0D%0AAdditional%20Details%3A%20%0D%0A%0D%0AThank%20you!">
+            Email My Quote Request
+          </a>
+          <p>Prefer to call or text? <a href="tel:+13195307446">(319) 530-7446</a></p>
+
+          <h3 style="margin-top:1.5rem;">What we&rsquo;ll ask</h3>
+          <ul class="service-list" style="text-align:left; display:inline-block;">
+            <li>Name</li>
+            <li>Event / Occasion</li>
+            <li>Date needed</li>
+            <li>Flower preference &mdash; Faux, Real, or a Mix</li>
+            <li>Style or color preferences</li>
+            <li>Budget range</li>
+            <li>Any additional details</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact details ===== -->
+    <section class="section section--tint" id="contact">
+      <div class="container narrow" style="margin-inline:auto;">
+        <p class="eyebrow center">Contact</p>
+        <h2 class="center">Reach Schwick&rsquo;s Picks</h2>
+        <ul class="contact-lines center">
+          <li>Email: <a href="mailto:schwickp@gmail.com">schwickp@gmail.com</a></li>
+          <li>Phone / text: <a href="tel:+13195307446">(319) 530-7446</a></li>
+          <li>Web: <a href="https://www.schwickspicks.com">www.schwickspicks.com</a></li>
+          <!-- TODO: add service area, e.g. "Serving Eastern Iowa" -->
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Shared footer (keep in sync across all pages) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h2>Schwick&rsquo;s Picks</h2>
+          <p>Handcrafted faux &amp; fresh floral arrangements, wreaths, and custom pieces for weddings, events, and everyday joy.</p>
+          <!-- TODO: add service area, e.g. "Serving Eastern Iowa" -->
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="quote.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="mailto:schwickp@gmail.com">schwickp@gmail.com</a></li>
+            <li><a href="tel:+13195307446">(319) 530-7446</a></li>
+            <li><a href="https://www.schwickspicks.com">www.schwickspicks.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <img class="footer-art" src="assets/img/branding/schwicks-picks-floral.png" alt="" aria-hidden="true">
+      <p class="footer-legal">&copy; <span id="year">2026</span> Schwick&rsquo;s Picks. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
